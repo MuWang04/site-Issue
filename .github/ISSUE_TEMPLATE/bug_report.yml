@@ -22,7 +22,6 @@ body:
       label: 问题涉及页面
       description: 自动填充当前页面，可手动修改
       placeholder: 例如：www.046699.xyz
-      value: |
     validations:
       required: true
 
@@ -68,7 +67,6 @@ body:
         - Z-中国台湾
         - 海外
         - 不确定
-      value: |
 
   - type: dropdown
     id: category
@@ -81,7 +79,6 @@ body:
         - 显示样式
         - 性能卡顿
         - 其他问题
-      value: |
     validations:
       required: true
 
@@ -106,7 +103,6 @@ body:
         - 移动端 - 纯血鸿蒙 (HarmonyOS NEXT)
         - 移动端 - 其他
       description: 系统自动检测，仅用于参考，请在上方下拉框中确认选择
-      value: |
 
   - type: input
     id: browser_version
