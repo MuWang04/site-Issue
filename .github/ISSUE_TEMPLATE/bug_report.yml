@@ -103,6 +103,8 @@ body:
         - 移动端 - 鸿蒙 (HarmonyOS 1.x ~ 4.x)
         - 移动端 - 纯血鸿蒙 (HarmonyOS NEXT)
         - 移动端 - 其他
+      attributes:
+      description: 系统自动检测，仅用于参考，请在下方下拉框中确认选择
 
   - type: input
     id: browser_version
