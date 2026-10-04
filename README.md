@@ -20,7 +20,7 @@ MuWang 个人网站的问题反馈与功能建议仓库。
 | --- | --- |
 | [问题反馈](https://github.com/MuWang04/site-Issue/issues/new?template=bug_report.yml) | 已经发生的功能、页面、显示、性能或访问问题 |
 | [功能建议](https://github.com/MuWang04/site-Issue/issues/new?template=feature_request.yml) | 希望网站新增某项功能、页面或内容 |
-| 紧急问题或不便公开的内容，可以发邮件 muwang@046699.xyz |
+| 紧急问题或不便公开的内容，可以发邮件 | 发送邮件 mailto:muwang@046699.xyz |
 
 普通用户不能直接创建空白 Issue，必须先填写表单。
 
