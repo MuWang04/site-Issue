@@ -13,7 +13,7 @@ body:
     attributes:
       label: 域名范围确认
       options:
-        - label: "我确认该问题发生在 *.046699.xyz 域名下。"
+        - label: "我确认该问题发生在 ** *.046699.xyz ** 域名下。"
           required: true
 
   - type: input
