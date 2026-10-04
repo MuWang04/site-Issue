@@ -1,12 +1,13 @@
 name: 问题反馈
 description: 报告网站功能异常、显示错误或性能问题
-title: "[问题] "
-labels: ["bug"]
+title: "[站点反馈] "
 body:
   - type: markdown
     attributes:
       value: |
-        感谢你的反馈！请尽量描述清楚，方便我定位和修复。
+        感谢您的反馈！请尽量描述清楚，方便我定位和修复！
+
+        如果你熟悉浏览器开发者工具，也可以帮助区分当前页面和实际失败请求。
 
   - type: checkboxes
     id: domain_scope
