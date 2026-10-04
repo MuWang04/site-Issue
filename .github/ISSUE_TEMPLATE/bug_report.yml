@@ -70,18 +70,18 @@ body:
         - 海外
         - 不确定
 
-  - type: dropdown
-    id: category
-    attributes:
-      label: 问题类型
-      options:
-        - 网站打不开
-        - 功能异常
-        - 显示样式
-        - 性能卡顿
-        - 其他问题
-    validations:
-      required: true
+    - type: dropdown
+      id: category
+      attributes:
+        label: 问题类型
+        options:
+          - 网站打不开
+          - 功能异常
+          - 显示样式
+          - 性能卡顿
+          - 其他问题
+      validations:
+        required: true
 
     - type: dropdown
     id: device
