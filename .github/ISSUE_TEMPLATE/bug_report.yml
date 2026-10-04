@@ -8,10 +8,18 @@ body:
       value: |
         感谢你的反馈！请尽量描述清楚，方便我定位和修复。
 
+  - type: checkboxes
+    id: domain_scope
+    attributes:
+      label: 域名范围确认
+      options:
+        - label: "我确认该问题发生在 *.046699.xyz 域名下。"
+          required: true
+
   - type: dropdown
     id: area
     attributes:
-      label: 涉及页面
+      label: 问题涉及页面
       options:
         - 主站 www.046699.xyz
         - 3D 子站 3d.046699.xyz
@@ -20,14 +28,93 @@ body:
       required: true
 
   - type: dropdown
+    id: region
+    attributes:
+      label: 您当时请求时的地理位置（所在省份/地区）
+      description: 请选择大致区域，帮助判断是否是地域网络问题
+      options:
+        - A-安徽
+        - B-北京
+        - C-重庆
+        - F-福建
+        - G-甘肃
+        - G-广东
+        - G-广西
+        - G-贵州
+        - H-海南
+        - H-河北
+        - H-河南
+        - H-黑龙江
+        - H-湖北
+        - H-湖南
+        - J-吉林
+        - J-江苏
+        - J-江西
+        - L-辽宁
+        - N-内蒙古
+        - N-宁夏
+        - Q-青海
+        - S-山东
+        - S-山西
+        - S-陕西
+        - S-上海
+        - S-四川
+        - T-天津
+        - X-西藏
+        - X-新疆
+        - Y-云南
+        - Z-浙江
+        - Z-中国香港
+        - Z-中国澳门
+        - Z-中国台湾
+        - 海外
+        - 不确定
+
+  - type: dropdown
     id: category
     attributes:
       label: 问题类型
       options:
+        - 网站打不开
         - 功能异常
         - 显示样式
         - 性能卡顿
         - 其他问题
+    validations:
+      required: true
+
+    - type: dropdown
+    id: device
+    attributes:
+      label: 您使用的设备
+      options:
+        - 桌面端 - Windows
+        - 桌面端 - macOS
+        - 桌面端 - Linux
+        - 桌面端 - 其他
+        - 移动端 - 安卓 (Android)
+        - 移动端 - 苹果 (iOS)
+        - 移动端 - 鸿蒙 (HarmonyOS 1.x ~ 4.x)
+        - 移动端 - 纯血鸿蒙 (HarmonyOS NEXT)
+        - 移动端 - 其他
+        - 不确定
+
+  - type: input
+    id: browser_version
+    attributes:
+      label: 您使用的浏览器（高级用户，可选）
+      description: 请填写浏览器名称和版本。（不知道版本可以只写浏览器名称）
+      placeholder: Microsoft Edge 版本 151.0.4129.107 (正式版本) (64 位)
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 请按顺序列出能够重现问题的操作
+      placeholder: |
+        1. 打开……
+        2. 点击……
+        3. 看到……
     validations:
       required: true
 
@@ -45,3 +132,11 @@ body:
     attributes:
       label: 截图（可选）
       description: 方便的话贴一张截图，直接拖图片到输入框
+
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 提交确认！
+      options:
+        - label: 我确认内容中不包含隐私或不必要的个人信息。
+          required: true
