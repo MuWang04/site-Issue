@@ -96,11 +96,10 @@ body:
         - 移动端 - 鸿蒙 (HarmonyOS 1.x ~ 4.x)
         - 移动端 - 纯血鸿蒙 (HarmonyOS NEXT)
         - 移动端 - 其他
-        - 不确定
-        
   - type: input
     id: detected_device
     attributes:
+      label: 
       description: 系统自动检测，仅用于参考，请在下方下拉框中确认选择
       placeholder: 例如：桌面端 - Windows
 
