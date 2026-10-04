@@ -1,0 +1,47 @@
+name: 问题反馈
+description: 报告网站功能异常、显示错误或性能问题
+title: "[问题] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢你的反馈！请尽量描述清楚，方便我定位和修复。
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: 涉及页面
+      options:
+        - 主站 www.046699.xyz
+        - 3D 子站 3d.046699.xyz
+        - 其他页面
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: 问题类型
+      options:
+        - 功能异常
+        - 显示样式
+        - 性能卡顿
+        - 其他问题
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 问题描述
+      description: 清晰描述遇到的问题，以及如何复现
+      placeholder: 例如：在博客页面点击文章后，页面显示空白
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: 截图（可选）
+      description: 方便的话贴一张截图，直接拖图片到输入框
