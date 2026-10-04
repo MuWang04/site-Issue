@@ -138,5 +138,5 @@ body:
     attributes:
       label: 提交确认
       options:
-        - label: 我确认内容中不包含隐私或不必要的个人信息。
+        - label: 我确认内容中不包含隐私或不必要的个人信息
           required: true
