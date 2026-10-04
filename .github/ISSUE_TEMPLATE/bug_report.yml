@@ -82,6 +82,13 @@ body:
     validations:
       required: true
 
+  - type: input
+    id: detected_device
+    attributes:
+      label: 自动识别的设备（仅供参考）
+      description: 系统自动检测，仅用于参考，请在下方下拉框中确认选择
+      placeholder: 例如：桌面端 - Windows
+      
   - type: dropdown
     id: device
     attributes:
@@ -96,12 +103,6 @@ body:
         - 移动端 - 鸿蒙 (HarmonyOS 1.x ~ 4.x)
         - 移动端 - 纯血鸿蒙 (HarmonyOS NEXT)
         - 移动端 - 其他
-  - type: input
-    id: detected_device
-    attributes:
-      label: 自动识别的设备（仅供参考）
-      description: 系统自动检测，仅用于参考，请在下方下拉框中确认选择
-      placeholder: 例如：桌面端 - Windows
 
   - type: input
     id: browser_version
