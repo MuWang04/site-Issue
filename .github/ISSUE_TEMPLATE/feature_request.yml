@@ -1,7 +1,6 @@
 name: 功能建议
 description: 提出新功能、内容建议或改进想法
-title: "[建议] "
-labels: ["enhancement"]
+title: "[功能建议] "
 body:
   - type: markdown
     attributes:
@@ -10,14 +9,21 @@ body:
 
         请描述需求和使用场景。
 
-  - type: dropdown
+
+  - type: checkboxes
+    id: domain_scope
+    attributes:
+      label: 域名范围确认
+      options:
+        - label: "我确认提出的功能建议在 *.046699.xyz 域名下。"
+          required: true
+          
+  - type: input
     id: area
     attributes:
-      label: 建议涉及
-      options:
-        - 主站 www.046699.xyz
-        - 3D 子站 3d.046699.xyz
-        - 全站通用
+      label: 需要功能建议网站
+      description: 自动填充，可手动修改
+      placeholder: 例如：www.046699.xyz
     validations:
       required: true
 
