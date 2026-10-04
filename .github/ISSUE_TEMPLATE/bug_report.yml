@@ -13,18 +13,15 @@ body:
     attributes:
       label: 域名范围确认
       options:
-        - label: "我确认该问题发生在 *.046699.xyz 域名下。"
+        - label: "我确认该问题发生在 `*.046699.xyz` 域名下。"
           required: true
 
-  - type: dropdown
+  - type: input
     id: area
     attributes:
       label: 问题涉及页面
-      description: 选择网页
-      options:
-        - 主站 www.046699.xyz
-        - 3D 子站 3d.046699.xyz
-        - 其他页面
+      description: 自动填充当前页面，可手动修改
+      placeholder: 例如：www.046699.xyz
     validations:
       required: true
 
